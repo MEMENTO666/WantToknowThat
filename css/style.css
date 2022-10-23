@@ -5,7 +5,7 @@ body {
 
 #container {
   width:100vw;
-  height:500vh;
+  height:475vh;
   background-color:#212932;
   display: flex;
   flex-direction: column;
@@ -18,6 +18,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #ffffff;
 }
 
 #logo {
@@ -45,7 +46,16 @@ body {
 
 #introImage {
   width:100%;
-  height:50vh;
+  height:500px;
+  background-color:#03071b;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#KSJ {
+  width:1100px;
+  height:500px;
   background-color: white;
   background-image: url(../image/김상중메인.jpg);
   background-position: center;
@@ -119,12 +129,18 @@ body {
   justify-content:flex-end;
   align-self: center;
   background-color: white;
+  background-image: url(../image/preview-1327.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /** for 문으로 요소 안에 이미지 차례로 넣기 **/
 }
 
 #preview > div:hover {
   width:280px;
   height:230px;
-  transition: 0.3s;
+  transition: 0.5s;
+  /** mouseover , mouseout 으로 효과주기 */
 }
 
 #preview > div > div {
@@ -158,6 +174,7 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
+  /** 페이지 넘어가는 기능 **/
 }
 
 #program_info {
@@ -195,11 +212,13 @@ body {
   width:300px;
   height: 400px;
   margin: 20px;
-  border: 1px solid white;
+  background-image: url(../image/Logo2.png);
+  background-position: center;
+  background-size:400px;
 }
 
 #program_info_box2 {
-  width:450px;
+  width:500px;
   height: 400px;
   background-color: #212932;
   margin: 20px;
@@ -211,7 +230,7 @@ body {
   list-style: none;
   color: white;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
   line-height:25px;
 }
 
@@ -368,6 +387,107 @@ body {
   color: white;
 
 }
+
+#footer {
+  width:100vw;
+  height:60vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer_top {
+  width:100%;
+  height:40vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#footer_top > ul {
+  line-height: 50px;
+  font-size: 12px;
+  font-weight: bold;
+  list-style: none;
+}
+
+#footer_top > ul > li {
+  color: #696969;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 35px;
+}
+
+#footer_bottom {
+  width:100%;
+  height:20vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer_bottom_box_01 {
+  width: 100%;
+  height:50%;
+  display: flex;
+}
+
+#footer_bottom_box_01 > div:nth-child(1) {
+  width:25%;
+  height:100%;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#footer_bottom_box_01 > div:nth-child(1) > p {
+  margin-right: 90px;
+}
+
+#footer_bottom_box_01 > div:nth-child(2) {
+  width:85%;
+  height: 100%;
+  display: flex;
+  color: #696969;
+}
+
+#footer_bottom_box_01 > div:nth-child(2) > p {
+  margin-left: 30px;
+  font-size: 12px;
+}
+
+#footer_bottom_box_02 {
+  width: 100%;
+  height:50%;
+  display: flex;
+}
+
+#footer_bottom_box_02 > div:nth-child(1) {
+  width:25%;
+  height:100%;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#footer_bottom_box_02 > div:nth-child(1) > p {
+  margin-right: 90px;
+}
+
+#footer_bottom_box_02 > div:nth-child(2) {
+  width:85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #696969;
+}
+
+#footer_bottom_box_02 > div:nth-child(2) > p {
+  margin-left: 30px;
+  font-size: 12px;
+}
+
+/**반응형으로 제작**/
 
 
 
