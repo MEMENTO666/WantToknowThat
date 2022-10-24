@@ -9,17 +9,26 @@
 
 #trailer > div {
   width:350px;
-  height:300px;
-  border: 1px solid black;
+  height:320px;
+  border: 4px solid rgba(253, 155, 0, 1);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
+#trailerImage_01  {
+  background-image: url(../image/preview-1326.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+
 #trailerImage_01 > div {
   width:100%;
   height:80px;
   background-color: #212932;
+  font-size: 15px;
 }
 
 #trailerImage_01 > div > p {
@@ -34,7 +43,16 @@
   width:100%;
   height:80px;
   background-color: #212932;
+  font-size: 15px;
+
 }
+
+#trailerImage_02  {
+  background-image: url(../image/preview-1327.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 
 #trailerImage_02 > div > p {
   margin: 0px;

@@ -1,7 +1,6 @@
 #preview {
   width:1200px;
   height: 100vh;
-  /* border: 1px solid black; */
   display:flex;
   align-items: center;
   justify-content: center;
@@ -18,11 +17,62 @@
   justify-content:flex-end;
   align-self: center;
   background-color: white;
+  /** for 문으로 요소 안에 이미지 차례로 넣기 **/
+}
+
+
+#preview > div:nth-child(1) {
   background-image: url(../image/preview-1327.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  /** for 문으로 요소 안에 이미지 차례로 넣기 **/
+}
+
+#preview > div:nth-child(2) {
+  background-image: url(../image/preview-1326.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#preview > div:nth-child(3) {
+  background-image: url(../image/preview-1325.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#preview > div:nth-child(4) {
+  background-image: url(../image/preview-1324.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#preview > div:nth-child(5) {
+  background-image: url(../image/preview-1323.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#preview > div:nth-child(6) {
+  background-image: url(../image/preview-1322.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#preview > div:nth-child(7) {
+  background-image: url(../image/preview-1321.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#preview > div:nth-child(8) {
+  background-image: url(../image/preview-1320.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#preview > div:nth-child(9) {
+  background-image: url(../image/preview-1319.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 #preview > div:hover {
@@ -46,22 +96,15 @@
   padding: 10px;
 }
 
-#previewPageButton {
-  width:500px;
-  height:50px;
-  /* border: 1px solid black; */
+#viewMore {
+  width:90px;
+  height:40px;
+  border: 2px solid rgba(253, 155, 0, 1);
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  color: white;
+  justify-content: center;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
-#previewPageButton > div {
-  width: 30px;
-  height:30px;
-  border: 1px solid rgba(253, 155, 0, 1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  /** 페이지 넘어가는 기능 **/
-}

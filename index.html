@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="css/intro.css"/>
   <link rel="stylesheet" href="css/trailer.css"/>
@@ -13,6 +16,7 @@
   <link rel="stylesheet" href="css/MCinfo.css"/>
   <link rel="stylesheet" href="css/report.css"/>
   <link rel="stylesheet" href="css/footer.css"/>
+  <link rel="stylesheet" href="css/dropDownMenu.css"/>
 
   <title>WantToKonwThat</title>
 </head>
@@ -21,12 +25,17 @@
     <div id="header">
       <div id="logo"></div>
     </div>
-    <div id="dropMenu">
-      <ul>
-        <li>DROP1</li>
-        <li>DROP2</li>
-        <li>DROP3</li>
-      </ul>
+    <div id="dropDownMenu">
+      <div class="dropdown">
+        <div class="dropbtn">프로그램 소개</div>
+        <div class="dropbtn">방송보기</div>
+        <div class="dropbtn">시청자 참여</div>
+        <div class="dropdown-content">
+          <a href="#"><p>프로그램 정보</p><br><p>진행자 소개</p></a>
+          <a href="#"><p>예고보기</p><br><p>미리보기</p></a>
+          <a href="#"><p>제보하기</p></a>
+        </div>
+      </div>
     </div>
     <div id="introImage">
       <div id="KSJ"></div>
@@ -36,7 +45,7 @@
         <div><p>[10월 8일 예고] 살인마의 시간 - 상계 세모자<br>살인 방화사건</p></div>
       </div>
       <div id="trailerImage_02">
-        <div></div>
+        <div><p>[10월 15일 예고] 함정과 흔적 - 지워진 용의자</p></div>
       </div>
     </div>
     <div id="preview">
@@ -44,37 +53,47 @@
         <div><p>[1327회] 함정과 흔적 - 지워진 용의자</p></div>
       </div>
       <div>
-        <div></div>
+        <div><p>[1326회] 살인마의 시간－상계 세모자 
+          살인방화사건</p></div>
       </div>
       <div>
-        <div></div>
+        <div>
+          <p>[1325회] 공포의 하얀 차 - 연쇄 성폭행범 김근식의 출소</p>
+        </div>
       </div>
       <div>
-        <div></div>
+        <div>
+          <p>[1324회] 고발과 증발 - 마지막 통화기록 미스터리</p>
+        </div>
       </div>
       <div>
-        <div></div>
+        <div>
+          <p>[1323회] 추적자와 도망자 - 대전 은행강도 살인사건</p>
+        </div>
       </div>
       <div>
-        <div></div>
+        <div>
+          <p>[1322회] 죽음의 구멍 - 도시는 왜 흉기가 되었는가</p>
+        </div>
       </div>
       <div>
-        <div></div>
+        <div>
+          <p>[1321회] 살인범의 지도 - 파주 택시기사 살인사건</p>
+        </div>
       </div>
       <div>
-        <div></div>
+        <div>
+          <p>[1320회] 유리지옥의 포식자들 - 원주 포주자매 감금 학대사건</p>
+        </div>
       </div>
       <div>
-        <div></div>
+        <div>
+          <p>[1319회] 안개속 밀실 - 제3산록교 추락 사망사건</p>
+        </div>
       </div>
     </div>
-    <div id="previewPageButton">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
+    <div id="viewMore">
+      <p>더 보기</p>
     </div>
     <div id="program_info">
       <div id="program_info_text"><p>프로그램 정보</p></div>
