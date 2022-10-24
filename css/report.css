@@ -1,0 +1,62 @@
+#report {
+  width:100vw;
+  height:40vh;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+#report_text {
+  width:100%;
+  height: 50px;
+  font-weight: bold;
+  background-color: #ffffff;
+  border-bottom: 5px solid rgba(253, 155, 0, 1);
+}
+
+#report_text > p {
+  padding-left: 30px;
+  color: rgba(253, 155, 0, 1);
+}
+
+#report_Box {
+  width:100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #212932;
+}
+
+#report_Box_Wrap {
+  width:80vw;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: #ffffff;
+}
+
+#report_Box_01 {
+  width:20vw;
+  height:150px;
+  background-color: white;
+  margin: 10px;
+  background-image: url(../image/logo1.png);
+  background-position: center;
+  background-size: 20vw;
+  background-repeat:no-repeat;
+}
+
+#report_Box_02 {
+  width:55vw;
+  height:200px;
+  background-color:#212932;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+  color: white;
+
+}

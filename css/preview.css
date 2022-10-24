@@ -1,0 +1,67 @@
+#preview {
+  width:1200px;
+  height: 100vh;
+  /* border: 1px solid black; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#preview > div {
+  width:270px;
+  height:220px;
+  border: 4px solid rgba(253, 155, 0, 1);
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-self: center;
+  background-color: white;
+  background-image: url(../image/preview-1327.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /** for 문으로 요소 안에 이미지 차례로 넣기 **/
+}
+
+#preview > div:hover {
+  width:280px;
+  height:230px;
+  transition: 0.5s;
+  /** mouseover , mouseout 으로 효과주기 */
+}
+
+#preview > div > div {
+  width:100%;
+  height:65px;
+  background-color: #212932;
+  color: white;
+}
+
+#preview > div > div > p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#previewPageButton {
+  width:500px;
+  height:50px;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#previewPageButton > div {
+  width: 30px;
+  height:30px;
+  border: 1px solid rgba(253, 155, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /** 페이지 넘어가는 기능 **/
+}

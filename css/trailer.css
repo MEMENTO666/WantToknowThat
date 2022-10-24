@@ -1,0 +1,45 @@
+#trailer {
+  width:100vw;
+  height:50vh;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#trailer > div {
+  width:350px;
+  height:300px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#trailerImage_01 > div {
+  width:100%;
+  height:80px;
+  background-color: #212932;
+}
+
+#trailerImage_01 > div > p {
+  margin: 0px;
+  color: white;
+  font-weight: bold;
+  line-height: 30px;
+  padding: 10px;
+}
+
+#trailerImage_02 > div {
+  width:100%;
+  height:80px;
+  background-color: #212932;
+}
+
+#trailerImage_02 > div > p {
+  margin: 0px;
+  color: white;
+  font-weight: bold;
+  line-height: 30px;
+  padding: 10px;
+}
