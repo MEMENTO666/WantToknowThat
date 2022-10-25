@@ -29,14 +29,13 @@
   color: rgba(253, 155, 0, 1);
 }
 
+/*** 슬라이드를 구현해볼까 함 ***/
 
 #trailerImage_01  {
   background-image: url(../image/preview-1326.jpg);
   background-position: center;
   background-size: cover;
 }
-
-
 
 #trailerImage_01 > div {
   width:100%;
