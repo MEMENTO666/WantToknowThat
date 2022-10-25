@@ -8,8 +8,9 @@ const maxItemCount = textContents.length;
 const createPhotoDiv = (title, imageUrl) => {
   const childDiv = document.createElement('div');
   childDiv.style.width = '100%';
-  childDiv.style.height = '65px';
-  childDiv.style.backgroundColor = '#212932';
+  childDiv.style.height = '55px';
+  childDiv.style.backgroundColor = '#15151A';
+  childDiv.style.opacity = 0.8;
   childDiv.style.color = 'white';
   const p = document.createElement('p');
   p.style.margin = '0px';
@@ -27,10 +28,10 @@ const createPhotoDiv = (title, imageUrl) => {
   photoDiv.style.margin = '5px';
   photoDiv.style.flexDirection = 'column';
   photoDiv.style.justifyContent = 'flex-end';
-  photoDiv.style.backgroundColor = 'white';
   photoDiv.style.backgroundImage = `url(${imageUrl})`;
   photoDiv.style.backgroundPosition = 'center';
   photoDiv.style.backgroundSize = 'cover';
+  
   photoDiv.appendChild(childDiv);
   return photoDiv;
 }
@@ -59,3 +60,5 @@ VIEWMORE.addEventListener("click", (e) => {
     }
   }
 });
+
+
