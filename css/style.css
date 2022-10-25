@@ -6,8 +6,8 @@ body {
 
 #container {
   width:100vw;
-  height:475vh;
-  background-color:#212932;
+  /* height:475vh; */
+  background-color:#15151A;
   display: flex;
   flex-direction: column;
   align-items: center;

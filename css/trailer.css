@@ -1,7 +1,7 @@
 #trailer {
   width:100vw;
   height:50vh;
-  background-color: #212932;
+  background-color: #15151A;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -25,7 +25,7 @@
 }
 
 #trailer_text > p {
-  padding-left: 30px;
+  margin-left: 30px;
   color: rgba(253, 155, 0, 1);
 }
 
@@ -41,8 +41,9 @@
 #trailerImage_01 > div {
   width:100%;
   height:80px;
-  background-color: #212932;
+  background-color: #15151A;
   font-size: 15px;
+  opacity: 0.8;
 }
 
 #trailerImage_01 > div > p {
@@ -56,9 +57,9 @@
 #trailerImage_02 > div {
   width:100%;
   height:80px;
-  background-color: #212932;
+  background-color: #15151A;
   font-size: 15px;
-
+  opacity: 0.8;
 }
 
 #trailerImage_02  {
@@ -74,4 +75,31 @@
   font-weight: bold;
   line-height: 30px;
   padding: 10px;
+}
+
+@media screen and (max-width:768px) {
+  #trailer_text > p {
+    font-size: 13px;
+    transition: 0.5s;
+  }
+  #trailer {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:80vh;
+    transition: 0.5s;
+  }
+  #trailer > div {
+    width:75%;
+    height:40%;
+    transition: 0.5s;
+  }
+  #trailer > div > div {
+    font-size: 14px;
+    transition: 0.5s;
+  }
+  #trailer_text {
+    height: 40px;
+    transition: 0.5s;
+
+  }
 }

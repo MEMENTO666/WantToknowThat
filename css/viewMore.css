@@ -10,3 +10,13 @@
   cursor: pointer;
   margin-top: 60px;
 }
+
+@media screen and (max-width:768px){
+  #viewMore {
+    width:80px;
+    height:35px;
+    transition: 0.5s;
+    font-size: 14px;
+  }
+  
+}
