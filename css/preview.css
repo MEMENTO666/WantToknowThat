@@ -1,11 +1,11 @@
 #preview {
-  width: 100%;
+  width:100vw;
   background-color:#15151A;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  padding: 2%;
+  /* padding: 2%; */
 }
 
 #preview_text {
@@ -36,9 +36,7 @@
     flex-direction: column;
     flex-wrap:unset;
     transition: 0.5s;
-
   }
-
 }
 
 
