@@ -32,6 +32,19 @@ const createPhotoDiv = (title, imageUrl) => {
   photoDiv.style.backgroundPosition = 'center';
   photoDiv.style.backgroundSize = 'cover';
   
+  photoDiv.addEventListener("mouseover",(e) => {
+    photoDiv.style.width = "340px";
+    photoDiv.style.height = "230px";
+    photoDiv.style.transition = "0.4s";
+  });
+
+  photoDiv.addEventListener("mouseout",(e) => {
+    photoDiv.style.width = "330px";
+    photoDiv.style.height = "220px";
+    photoDiv.style.transition = "0.4s";
+  });
+
+
   photoDiv.appendChild(childDiv);
   return photoDiv;
 }
@@ -60,5 +73,7 @@ VIEWMORE.addEventListener("click", (e) => {
     }
   }
 });
+
+
 
 
