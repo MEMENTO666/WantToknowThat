@@ -84,7 +84,7 @@
 
 @media screen and (max-width:768px) {
   #trailer {
-    height:50vh;
+    height:35vh;
   }
   #trailer_text > p {
     font-size: 13px;
