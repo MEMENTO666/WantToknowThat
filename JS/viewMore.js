@@ -33,8 +33,8 @@ const createPhotoDiv = (title, imageUrl) => {
   photoDiv.style.backgroundSize = 'cover';
   
   photoDiv.addEventListener("mouseover",(e) => {
-    photoDiv.style.width = "340px";
-    photoDiv.style.height = "230px";
+    photoDiv.style.width = "335px";
+    photoDiv.style.height = "225px";
     photoDiv.style.transition = "0.4s";
   });
 
@@ -58,6 +58,7 @@ for(let i=0; i<currentItems; i++)
 VIEWMORE.addEventListener("click", (e) => {
   console.log('#### max = ', maxItemCount);
   console.log('#### current = ', currentItems);
+
   if(maxItemCount <= currentItems) {
     return;
   }
@@ -73,6 +74,23 @@ VIEWMORE.addEventListener("click", (e) => {
     }
   }
 });
+
+VIEWMORE.addEventListener("mouseover",(e) => {
+  VIEWMORE.style.width = "95px";
+  VIEWMORE.style.height = "45px";
+  VIEWMORE.style.fontSize = "18px";
+  VIEWMORE.style.transition = "0.4s";
+});
+
+VIEWMORE.addEventListener("mouseout",(e) => {
+  VIEWMORE.style.width = "90px";
+  VIEWMORE.style.height = "40px";
+  VIEWMORE.style.transition = "0.4s";
+  VIEWMORE.style.fontSize = "16px";
+
+});
+
+
 
 
 
