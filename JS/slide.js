@@ -1,5 +1,3 @@
-
-
 const slides = document.getElementsByClassName("carousel-item"); // [div, div, div] -> [0,1,2] -> [이미지]
 let slidePosition = 0;
 const totalSlides = slides.length; // 3 [0,1,2]
@@ -43,7 +41,7 @@ function moveToPrevSlide() {
   slides[slidePosition].classList.add("carousel-item-visible");
 }
 
-setInterval(function() {
+setInterval(function () {
   moveToNextSlide();
   console.log("5초");
 }, 5000);
