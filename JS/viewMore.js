@@ -12,12 +12,14 @@ const createPhotoDiv = (title, imageUrl) => {
   childDiv.style.backgroundColor = '#15151A';
   childDiv.style.opacity = 0.8;
   childDiv.style.color = 'white';
+
   const p = document.createElement('p');
   p.style.margin = '0px';
   p.style.fontSize = '14px';
   p.style.fontWeight = 'bold';
   p.style.padding = '10px';
   p.textContent = title;
+  
   childDiv.appendChild(p);
 
   const photoDiv = document.createElement('div');
@@ -33,14 +35,12 @@ const createPhotoDiv = (title, imageUrl) => {
   photoDiv.style.backgroundSize = 'cover';
   
   photoDiv.addEventListener("mouseover",(e) => {
-    photoDiv.style.width = "335px";
-    photoDiv.style.height = "225px";
+    photoDiv.style.scale = (1.1);
     photoDiv.style.transition = "0.4s";
   });
 
   photoDiv.addEventListener("mouseout",(e) => {
-    photoDiv.style.width = "330px";
-    photoDiv.style.height = "220px";
+    photoDiv.style.scale = "none";
     photoDiv.style.transition = "0.4s";
   });
 

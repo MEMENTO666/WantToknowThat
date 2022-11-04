@@ -22,7 +22,6 @@ const textContents = [
     {
       title: '[1322회] 죽음의 구멍 - 도시는 왜 흉기가 되었는가',
       url: '../image/preview-1322.jpg',
-      // todo 안나옴
     },
     {
       title: '[1321회] 살인범의 지도 - 파주 택시기사 살인사건',

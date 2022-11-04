@@ -49,6 +49,8 @@
   display: flex;
   /* border: 1px solid rgba(253, 155, 0, 1); */
   flex-direction: column;
+  text-shadow: 1px 1px 3px rgba(253, 155, 0, 1)
+
 }
 
 #MCinfo_Box_02 > p {
