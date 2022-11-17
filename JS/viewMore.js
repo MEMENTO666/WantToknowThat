@@ -33,6 +33,7 @@ const createPhotoDiv = (title, imageUrl) => {
   photoDiv.style.backgroundImage = `url(${imageUrl})`;
   photoDiv.style.backgroundPosition = "center";
   photoDiv.style.backgroundSize = "cover";
+  photoDiv.style.cursor = "pointer";
 
   photoDiv.addEventListener("mouseover", (e) => {
     photoDiv.style.scale = 1.1;
@@ -77,14 +78,12 @@ VIEWMORE.addEventListener("click", (e) => {
 
 VIEWMORE.addEventListener("mouseover", (e) => {
   VIEWMORE.style.width = "95px";
-  VIEWMORE.style.height = "45px";
-  VIEWMORE.style.fontSize = "18px";
+  VIEWMORE.style.fontSize = "17px";
   VIEWMORE.style.transition = "0.4s";
 });
 
 VIEWMORE.addEventListener("mouseout", (e) => {
   VIEWMORE.style.width = "90px";
-  VIEWMORE.style.height = "40px";
   VIEWMORE.style.transition = "0.4s";
   VIEWMORE.style.fontSize = "16px";
 });

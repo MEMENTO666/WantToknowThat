@@ -47,9 +47,8 @@
   background-color: #15151A;
   margin: 20px;
   display: flex;
-  /* border: 1px solid rgba(253, 155, 0, 1); */
   flex-direction: column;
-  text-shadow: 1px 1px 3px rgba(253, 155, 0, 1)
+  text-shadow: 1px 1px 4px rgba(253, 155, 0, 1)
 
 }
 

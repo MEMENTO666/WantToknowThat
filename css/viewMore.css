@@ -5,11 +5,12 @@
   background-color: rgba(253, 155, 0, 1);
   display: flex;
   align-items: center;
-  color: #212932;
+  color: rgb(204, 204, 204);
   justify-content: center;
   margin-bottom: 40px;
   cursor: pointer;
   margin-top: 90px;
+  font-weight: 300;
 }
 
 @media screen and (max-width:768px){

@@ -1,21 +1,29 @@
 body {
-  margin:0; padding:0; box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   overflow-x: hidden;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "YDGothic";
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "YDGothic";
+  src: url(../font/YDGothic\ 140\ Pro.ttf);
 }
 
 #container {
-  width:100vw;
+  width: 100vw;
   /* height:475vh; */
-  background-color:#15151A;
+  background-color: #15151a;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 #header {
-  width:100%;
-  height:100px;
+  width: 100%;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,18 +31,13 @@ body {
 }
 
 #logo {
-  width:160px;
-  height:90%;
+  width: 160px;
+  height: 90%;
   /* background-color: white; */
   background-image: url(../image/logo1.png);
   background-position: center;
-  background-size:160px;
+  background-size: 160px;
   background-repeat: no-repeat;
 }
 
-
 /**반응형으로 제작**/
-
-
-
-
