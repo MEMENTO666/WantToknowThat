@@ -59,7 +59,7 @@
 
 @media screen and (max-width: 768px) {
   #footer {
-    height: 50vh;
+    height: 60vh;
   }
   #footer_top {
     width: 100vw;
@@ -74,6 +74,7 @@
   }
   #footer_bottom {
     font-size: 10px;
+
   }
   #footer_bottom > p {
     padding-left: 0px;

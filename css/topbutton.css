@@ -1,18 +1,39 @@
-.topbutton {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
+#topbutton{
+  background-color: rgba(226, 226, 226, 0.452);
+  font-size: 1em;  color:#fff;
+  line-height: 50px;
+  text-align: center;
+  width:50px;
+  height:50px;
+  border-radius: 40px;
   position: fixed;
-  right: 30px;
-  bottom: 30px;
-  background-color: rgba(255, 255, 255, 0.425);
-  z-index: 100;
+  bottom: 40px;
+  right:20px;
+  transition-property: background-color, opacity, visibility;
+  transition-duration: 0.3s, 0.5s, 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
   display: flex;
   align-items: center;
-  box-shadow: 1px 1px 2px darkgray;
-
-}
-
-.topbutton > iconify-icon {
+  justify-content: center;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.301);
+ }
+ 
+ #topbutton:after{
+   line-height: 40px;
+   }
+ 
+ #topbutton.show{
+   opacity:1;
+   visibility:visible;
+ }
+ 
+ #topbutton.show:hover{
+   cursor:pointer;
+   background-color: rgba(221, 221, 221, 0.589);
+ }
+#topbutton > iconify-icon {
   cursor: pointer;
+  color: rgb(172, 172, 172);
 }

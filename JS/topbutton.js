@@ -1,34 +1,24 @@
-const dm = document.documentElement;
-const TBTN = document.querySelector(".topbutton");
+const TBTN = document.getElementById('topbutton');
 
-const documentHeight = dm.scrollHeight;
+const checkScroll=()=>{
 
-window.addEventListener("wheel", () => {
-  let scrollToTop = dm.scrollTop;
+    let pageOffset = window.pageYOffset;
 
-  if (documentHeight !== 0) {
-    const actionHeight = documentHeight / 10;
+    if(pageYOffset !== 0){
 
-    if (scrollToTop > actionHeight) {
-      TBTN.style.display = "flex";
-    } else {
-      TBTN.style.display = "none";
+        TBTN.classList.add('show');  
+    }else{
+        TBTN.classList.remove('show'); 
     }
-  }
-});
-
-TBTN.addEventListener("click", (e) => {
-  e.preventDefault();
-  scrollUp();
-  TBTN.style.display = "none";
-});
-
-function scrollUp() {
-  let upper = setInterval(function () {
-    if (dm.scrollTop !== 0) {
-      window.scrollBy(0, -55);
-    } else {
-      clearInterval(upper);
-    }
-  }, 15);
 }
+
+const moveBackToTop=()=>{
+    if(window.pageYOffset > 0 ){
+        window.scrollTo({top:0, behavior:"smooth"});
+    }
+}
+
+
+window.addEventListener('scroll', checkScroll);
+
+TBTN.addEventListener('click',moveBackToTop);

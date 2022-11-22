@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  /* padding: 2%; */
+  padding: 2%;
 }
 
 #preview_text {
