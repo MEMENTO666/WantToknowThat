@@ -30,7 +30,7 @@
 }
 
 .images {
-  width: 1000px;
+  width: 90vw;
   height: 100%;
   display: flex;
   align-items: center;
@@ -45,6 +45,7 @@
   flex-direction: column;
   position: relative;
   background-position: center;
+  /* width:100%; */
 }
 
 .slideImgBox > img {
@@ -93,12 +94,18 @@
 
 @media screen and (max-width: 768px) {
   .content {
-    width: 100%;
+    width: 80%;
     height: 31vh;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  .slideImgBox {
+    width:100%;
+  }
+
+
 
   .slideImgBox > img {
     display: flex;
@@ -106,6 +113,16 @@
     justify-content: center;
     width: 500px;
   }
+
+  .images {
+    width:90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
 
   #trailer_text {
     font-size: 13px;
